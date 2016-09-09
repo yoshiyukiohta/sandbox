@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="flip.css">
     <link rel="stylesheet" href="swipe.css">
     <link rel="stylesheet" href="imagezoomer.css">
-    
     <title>Sandbox</title>
   </head>
   <body>
@@ -24,16 +23,27 @@
         </header>
         <ul class="side-nav__content">
           <li href="/">Home</li>
+          <li href="/flip">Flip</li>
           <li href="/swipe">Swipe</li>
           <li href="/imagezoomer">ImageZoomer</li>
           <li href="/about">About</li>
-
         </ul>
       </nav>
     </aside>
 
     <div class="views">
       <sc-view class="view-home" route="^/$">Sandbox</sc-view>
+      <sc-view class="view-flip" route="^/flip$">
+        <sc-card axis="random" duration="800">
+          <div class="front">
+            <h1>hello</h1>
+            <button>flip</button>
+          </div>
+          <div class="back">
+            <button>flip</button>
+          </div>
+        </sc-card>        
+      </sc-view>
       <sc-view class="view-swipe" route="^/swipe$">
         <div class="card-container">
           <div class='card'>card 1</div>
@@ -51,7 +61,9 @@
           </div>
         </main>        
       </sc-view>
-      <sc-view class="view-about" route="^/about$">About</sc-view>
+      <sc-view class="view-about" route="^/about$">
+        fufabu
+      </sc-view>
     </div>
 
     <div class="zoomer">
@@ -59,10 +71,13 @@
     </div>
 
     <sc-router></sc-router>
+
     <script defer src="detabinator.js"></script>
     <script defer src="side-nav.js"></script>
     <script defer src="sc-view.js"></script>
     <script defer src="sc-router.js"></script>
+    <script defer src="inert.js"></script>
+    <script defer src="flip.js"></script>
     <script defer src="swipe.js"></script>
     <script defer src="image-zoomer.js"></script>
   </body>

@@ -1,0 +1,62 @@
+.view-flip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+sc-card {
+    width: 260px;
+    height: 380px;
+    position: relative;
+    perspective: 600px;
+    will-change: transform;
+}
+
+sc-card .front,
+sc-card .back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+sc-card button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    text-indent: -10000px;
+}
+
+sc-card .front {
+    background: #444;
+    color: #FFF;
+}
+sc-card .front h1 {
+    font-size: 24px;
+}
+
+sc-card .back {
+    background: url(http://placepu.gs/320/240) center center no-repeat;
+    color: #FFF;
+    transform: rotateY(180deg);
+}
+
+sc-card .umbra,
+sc-card .penumbra {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: visible;
+}
