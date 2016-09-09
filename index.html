@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
-    <title>hello world</title>
+
+    <link rel="stylesheet" href="imagezoomer.css">
     
+    <title>Sandbox</title>
   </head>
   <body>
 
@@ -23,7 +25,7 @@
           <li href="/">Home</li>
           <li href="/about">About</li>
           <li href="/contact">Contact</li>
-          <li href="/misc">Misc</li>
+          <li href="/imagezoomer">ImageZoomer</li>
         </ul>
       </nav>
     </aside>
@@ -32,7 +34,17 @@
       <sc-view class="view-home" route="^/$">Home</sc-view>
       <sc-view class="view-about" route="^/about$">About</sc-view>
       <sc-view class="view-contact" route="^/contact$">Contact</sc-view>
-      <sc-view class="view-misc" route="^/misc$">Misc</sc-view>
+      <sc-view class="view-imagezoomer" route="^/imagezoomer$">
+        <main class="main">
+          <div class="image-surround">
+            <img src="http://placepu.gs/500/300" class="target">
+          </div>
+        </main>        
+      </sc-view>
+    </div>
+
+    <div class="zoomer">
+      <canvas class="zoomer__canvas"></canvas>
     </div>
 
     <sc-router></sc-router>
@@ -40,8 +52,6 @@
     <script defer src="side-nav.js"></script>
     <script defer src="sc-view.js"></script>
     <script defer src="sc-router.js"></script>
-    <script>
-     
-    </script>
+    <script defer  src="image-zoomer.js"></script>
   </body>
 </html>

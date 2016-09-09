@@ -1,0 +1,31 @@
+.main {
+    flex: 1;
+    padding: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main img {
+    width: 100%;
+    max-width: 650px;
+    cursor: zoom-in;
+}
+
+.zoomer {
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.zoomer__canvas {
+    position: absolute;
+    top: -134px;
+    left: -64px;
+}

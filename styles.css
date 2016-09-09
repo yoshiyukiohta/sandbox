@@ -182,7 +182,7 @@ sc-view.visible {
     z-index: -1;
     background: rgb(64,0,128);
 }
-.view-misc {
+.view-imagezoomer {
     z-index: -1;
     background: rgb(128,64,0);
 }
