@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <title>hello world</title>
+    
+  </head>
+  <body>
+
+    <div class="header">
+      <button class="js-menu-show header__menu-toggle material-icons">menu</button>
+    </div>
+
+    <aside class="js-side-nav side-nav">
+      <nav class="js-side-nav-container side-nav__container">
+        <button class="js-menu-hide side-nav__hide material-icons">close</button>
+        <header class="side-nav__header">
+        </header>
+        <ul class="side-nav__content">
+          <li href="/">Home</li>
+          <li href="/about">About</li>
+          <li href="/contact">Contact</li>
+          <li href="/misc">Misc</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="views">
+      <sc-view class="view-home" route="^/$">Home</sc-view>
+      <sc-view class="view-about" route="^/about$">About</sc-view>
+      <sc-view class="view-contact" route="^/contact$">Contact</sc-view>
+      <sc-view class="view-misc" route="^/misc$">Misc</sc-view>
+    </div>
+
+    <sc-router></sc-router>
+    <script defer src="detabinator.js"></script>
+    <script defer src="side-nav.js"></script>
+    <script defer src="sc-view.js"></script>
+    <script defer src="sc-router.js"></script>
+    <script>
+     
+    </script>
+  </body>
+</html>
