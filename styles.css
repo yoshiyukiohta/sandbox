@@ -174,8 +174,9 @@ sc-view.visible {
     z-index: -1;
     background: rgb(128,0,64);
 }
-.view-contact {
+.view-swipe {
     z-index: -1;
+    overflow-y: hidden;
     background: rgb(0,128,64);
 }
 .view-about {
